@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="./index.js" defer></script>
+</head>
+
+<body class="bg-slate-200">
+  <main class="flex flex-col md:flex-row">
+    <section class="h-screen w-full md:w-3/5 px-10 flex justify-center items-center">
+      <article class="w-full md:w-4/5 h90 flex flex-col items-start justify-between">
+        <div class=" flex flex-col items-start w-full gap-10 h-full">
+          <div
+            class="text-white bg-blue-950 px-10 py-8 w-full text-center text-2xl font-bold rounded-t-2xl flex items-center justify-center gap-4">
+            <img src="./assets/datos-encriptados.png" alt="" width="40" height="40" class="object-cover">
+            <h2>DE/CODIFICADOR DE TEXTOS</h2>
+          </div>
+          <textarea id="textToManage" placeholder="Escribe o pega tu texto aqui..." maxlength="1000"
+            class="self-start text-black text-2xl font-normal tracking-normal p-4 w-full h-3/5"></textarea>
+          <div
+            class="flex justify-between w-full md:px-1 items-center mt-[-12px] text-sm xs:text-lg sm:text-xl font-medium gap-1">
+            <div class="flex gap-3 items-center leading-0">
+              <img src="./assets/rulesText.png" width="20" height="20" alt="">
+              <p class="">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <p id="textToManageLength">(0/1000) palabras</p>
+          </div>
+        </div>
+        <div class="flex w-full justify-between gap-10 md:mb-10">
+          <button id="encrypt-button" class="btn w-3/6 bg-blue-950 text-white text-2xl p-6 md:p-8">Encriptar</button>
+          <button id="decrypt-button"
+            class="btn btnBorderColor w-3/6 text-blue-900 text-2xl p-6 md:p-8">Desencriptar</button>
+        </div>
+      </article>
+    </section>
+    <section class="h-screen w-full md:w-2/5 px-10 justify-center md:justify-center items-center flex noTextApplied">
+      <article
+        class="bg-white w-full md:w-5/6 h-5/6 rounded-3xl h90 md:p-12 flex flex-col items-center justify-center gap-2">
+        <img src="./assets/Muñeco.png" alt="" class="object-cover" width="240" height="240">
+        <p class="px-10 text-4xl font-bold text-center tracking-normal">Ningún mensaje fue encontrado.</p>
+        <p class="messageText2 px-10 text-2xl font-normal tracking-normal text-center">Ingresa el texto que desees
+          encriptar o desencriptar.</p>
+      </article>
+    </section>
+    <section class="h-screen  w-full md:w-2/5 px-10 justify-center md:justify-start items-center hidden textApplied ">
+      <article
+        class="bg-white w-full md:w-5/6 h-5/6 rounded-3xl h90 p-12 flex flex-col items-center justify-between gap-2">
+        <p class="textEncrypted pt-4 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem placeat
+          exercitationem delectus cupiditate illum distinctio at, cum laboriosam vitae laborum incidunt sit alias
+          reprehenderit! Sunt rerum autem deserunt quisquam asperiores!</p>
+        <button class="btn btnBorderColor w-3/5 text-2xl p-6 md:p-8">Copiar</button>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

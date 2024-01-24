@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+textarea {
+	resize: none;
+}
+/* For WebKit (Chrome, Safari) */
+textarea::-webkit-scrollbar {
+	width: 10px; /* Set the width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: #001f3f; /* Color of the scrollbar thumb */
+}
+
+textarea::-webkit-scrollbar-track {
+	background-color: #e5e5e5; /* Replace with the color you want */
+}
+
+/* For Firefox */
+textarea {
+	scrollbar-color: #001f3f#e5e5e5; /* Replace with the color you want */
+}
+
+.h90 {
+	height: 90%;
+}
+
+.btn {
+	border-radius: 2.4rem;
+	font-weight: 400;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.btnBorderColor {
+	border: 1px solid #0a3871;
+}
