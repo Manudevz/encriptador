@@ -8,7 +8,9 @@ Aplicación simple para encriptar y desencriptar texto. Puedes acceder a la apli
 - **Copia Rápida:** Copia el texto encriptado o desencriptado con un solo clic.
 - **Interfaz Intuitiva:** Diseño simple y fácil de usar para una experiencia sin complicaciones.
 
-![Captura de pantalla](https://prnt.sc/T7p2M_47agWE)
+![Captura de pantalla]
+<img src="https://prnt.sc/T7p2M_47agWE" alt="">
+
 
 ---
 
