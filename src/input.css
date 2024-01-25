@@ -139,3 +139,13 @@ textarea {
 	left: 0;
 	animation: bar 2s 1s both;
 }
+
+@media (prefers-reduced-motion: reduce-motion) {
+	.toast {
+		animation: none !important;
+	}
+
+	.bar {
+		animation: none !important;
+	}
+}
