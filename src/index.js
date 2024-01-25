@@ -1,13 +1,10 @@
 const runEncryption = (parameters) => {
-	const encryptButton = document.getElementById("encrypt-button");
-	const decryptButton = document.getElementById("decrypt-button");
 	const textToManage = document.getElementById("textToManage");
 	const textEncrypted = document.getElementById("textEncrypted");
 	const textToManageLength = document.getElementById("textToManageLength");
 	const textApplied = document.querySelector(".textApplied");
 	const noTextApplied = document.querySelector(".noTextApplied");
-	let textSecret,
-		textRevealed = [];
+	let textSecret;
 
 	const wordsKey = {
 		a: "ai",
