@@ -8,8 +8,7 @@ Aplicación simple para encriptar y desencriptar texto. Puedes acceder a la apli
 - **Copia Rápida:** Copia el texto encriptado o desencriptado con un solo clic.
 - **Interfaz Intuitiva:** Diseño simple y fácil de usar para una experiencia sin complicaciones.
 
-![Captura de pantalla]
-<a href="https://manudevz.github.io/encriptador/"><img src="https://i.ibb.co/PZLcYrm/Screenshot-104.png" alt="Screenshot-104" border="0"></a>
+<a target="_blank" href="https://manudevz.github.io/encriptador/"><img src="https://i.ibb.co/PZLcYrm/Screenshot-104.png" alt="Screenshot-104" border="0"></a>
 
 
 ---
