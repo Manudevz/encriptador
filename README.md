@@ -9,7 +9,7 @@ Aplicación simple para encriptar y desencriptar texto. Puedes acceder a la apli
 - **Interfaz Intuitiva:** Diseño simple y fácil de usar para una experiencia sin complicaciones.
 
 ![Captura de pantalla]
-<img src="https://prnt.sc/T7p2M_47agWE" alt="">
+<a href="https://manudevz.github.io/encriptador/"><img src="https://i.ibb.co/PZLcYrm/Screenshot-104.png" alt="Screenshot-104" border="0"></a>
 
 
 ---
