@@ -16,9 +16,9 @@ const runEncryption = (parameters) => {
 
 	const handletextToManageChange = (e) => {
 		if (e.target.value.length === 1) {
-			textToManageLength.innerText = `(${e.target.value.length}/1000) caracter.`;
+			textToManageLength.textContent = `(${e.target.value.length}/1000) caracter.`;
 		} else {
-			textToManageLength.innerText = `(${e.target.value.length}/1000) caracteres.`;
+			textToManageLength.textContent = `(${e.target.value.length}/1000) caracteres.`;
 		}
 		if (e.target.value.length === 1000) {
 			textToManageLength.classList.add("text-red-500");
@@ -105,7 +105,7 @@ const runEncryption = (parameters) => {
 						? decrypt(trimmedValue)
 						: encrypt(trimmedValue);
 
-				textEncrypted.innerText = textSecret;
+				textEncrypted.textContent = textSecret;
 
 				messages({
 					message: `Texto transformado correctamente`,
