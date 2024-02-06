@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -7,16 +7,102 @@
   <link href="./src/output.css" rel="stylesheet">
   <meta name="referrer" content="no-referrer">
   <script src="./src/index.js" defer></script>
+  <script src="./src/darktheme.js"></script>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    /* dark theme */
+    .switch {
+      position: absolute;
+      display: inline-block;
+      width: 80px;
+      height: 40px;
+      right: 10px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f0b433;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 20px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 36px;
+      width: 36px;
+      left: 2px;
+      bottom: 2px;
+      background-color: rgb(255, 255, 255);
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    .left-image,
+    .right-image {
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      z-index: 10;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .left-image {
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+    }
+
+    .right-image {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
+
+    input:checked+.slider {
+      background-color: #292c2e;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #4d5256;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(40px);
+      -ms-transform: translateX(40px);
+      transform: translateX(40px);
+    }
+  </style>
 </head>
 
-<body class="bg-slate-200">
+<body class=" bg-slate-200 ">
+  <header>
+    <label class="switch" for="toggleSwitch">
+      <img src="./src/assets/light-mode.png" alt="Left Image" class="left-image bg-white" id="leftImage">
+      <input type="checkbox" id="toggleSwitch">
+      <span class="slider"></span>
+      <img src="./src/assets/night-mode.png" alt="Right Image" class="right-image" id="rightImage">
+    </label>
+  </header>
   <main class="flex flex-col md:flex-row">
     <section class="h-screen w-full md:w-3/5 px-10 flex justify-center items-center">
       <article class="w-full md:w-4/5 h90 flex flex-col items-start justify-between">
         <div class=" flex flex-col items-start w-full gap-10 h-full">
           <div
-            class="text-white bg-blue-950 px-10 py-8 w-full text-center text-2xl font-bold rounded-t-2xl flex items-center justify-center gap-4">
+            class="text-white bg-blue-950 dark:bg-black px-10 py-8 w-full text-center text-2xl font-bold rounded-t-2xl flex items-center justify-center gap-4">
             <img src="./src/assets/datos-encriptados.png"
               alt="mensajes con candado haciendo referencia a cifrar mensaje" width="40" height="40"
               class="object-cover">
@@ -63,7 +149,7 @@
       </article>
     </section>
   </main>
-  <footer class="h-24 bg-black text-white flex justify-center items-center">
+  <footer class="h-24 bg-blue-950 dark:bg-black text-white flex justify-center items-center">
     <div class="flex flex-col items-center gap-2">
       <div class="text-xl md:text-2xl text-center flex gap-20">
         <a target="_blank" href="https://portfolio-enmanuel.vercel.app/" class="flex items-center gap-1">
